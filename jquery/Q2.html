@@ -1,0 +1,27 @@
+<!-- 2. Limit no of characters in the input field. Also, display remaining characters below the input
+field.
+e.g : If the limit is set to 10, then the user should be allowed to add only 10 characters in
+the input box & show remaining characters on each character input. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Task 2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  </head>
+  <body>
+      <input type="text" id="limit" maxlength="10" placeholder="Enter yout mobile number:"><br>
+      Characters remaining:<span id="set">10</span>
+      <script>
+          $(document).ready(function(){
+              var max = 10;
+              $("#limit").keyup(function(){
+                  var len = max - $(this).val().length;
+                  $("#set").text(len);
+            });
+
+          });
+      </script>
+  </body>
+</html>

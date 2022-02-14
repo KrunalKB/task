@@ -1,0 +1,26 @@
+<!-- 3. Given a paragraph, Underline all the words of a text using jQuery. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Task 3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      <br />
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimbr
+      <br />
+      veniam, quis nostrud exercitation
+    </p>
+    <button>Click here</button>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("p").css("text-decoration", "underline");
+        });
+      });
+    </script>
+  </body>
+</html>

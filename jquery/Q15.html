@@ -1,0 +1,28 @@
+<!-- 15. Change the color of any paragraph to red on mouseover event. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Task 15</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    </p>
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    </p>
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    </p>
+    <script>
+      $("p").mouseover(() => {
+        $("p").css("background-color", "red");
+      });
+      $("p").mouseout(() => {
+        $("p").css("background-color", "white");
+      });
+    </script>
+  </body>
+</html>

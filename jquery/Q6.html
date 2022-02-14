@@ -1,0 +1,25 @@
+<!-- 6. Add options to a drop-down list using jQuery. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Task 6</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div>
+      Drop down list:
+      <select name="list" id="list">
+        <option value="select">select</option>
+        <option value="BMW">BMW</option>
+      </select>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("#list").append("<option value='Audi'>Audi</option>");
+        $("#list").append("<option value='Ferrari'>Ferrari</option>");
+        $("#list").append("<option value='Ford'>Ford</option>");
+      });
+    </script>
+  </body>
+</html>

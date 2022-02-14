@@ -1,0 +1,22 @@
+<!-- 1. Blink text using jQuery (Hint : Fading effects) -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Task 1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h2 id="text" style="display: none">Hello this is jQuery animation</h2>
+
+    <script>
+      function blink() {
+        $(document).ready(function () {
+          $("#text").fadeIn(500);
+          $("#text").fadeOut(500);
+        });
+      }
+      setInterval(blink, 500);
+    </script>
+  </body>
+</html>
