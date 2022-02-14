@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TAsk 7</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <table border="1" style="width: 50%">
+      <tr>
+        <th>First name</th>
+        <th>Last name</th>
+      </tr>
+      <tr>
+        <td>Krunal</td>
+        <td>Bhimajiyani</td>
+      </tr>
+      <tr>
+        <td>Smit</td>
+        <td>Sohagia</td>
+      </tr>
+      <tr>
+        <td>Brijesh</td>
+        <td>Bhimani</td>
+      </tr>
+    </table>
+    <button class="btn">Remove Row</button>
+    <script>
+      $(".btn").click(function () {
+        $("tr:gt(1)").remove();
+      });
+    </script>
+  </body>
+</html>

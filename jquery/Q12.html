@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Task 12</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <fieldset style="width: 30%">
+      <legend>Hobbies:</legend>
+      <input type="checkbox" class="check" />Dancing <br />
+      <input type="checkbox" class="check" />Singing <br />
+      <input type="checkbox" class="check" />reading
+    </fieldset>
+    <br />
+    <button>Click Here</button>
+    <p></p>
+
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          var a = $("input:checked").length;
+          if (a > 0) {
+            $("p").html("Total checkbox is:" + a);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

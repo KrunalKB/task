@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Task 8</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <a href="https://www.google.com/" class="cont">Google</a><br />
+    <a href="https://www.w3schools.com/" class="cont">w3schools</a><br /><br />
+    <button class="btn">Click to remove link</button>
+    <script>
+      $(document).ready(function () {
+        $(".btn").click(function () {
+          $("a").removeAttr("href");
+        });
+      });
+    </script>
+  </body>
+</html>

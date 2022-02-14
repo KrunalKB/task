@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Task 4</title>
+  </head>
+  <body>
+    <input type="text" id="str" placeholder="Enter string" /><br /><br />
+    <button id="btn" onclick="func()">Create</button>
+    <p id="result"></p>
+
+    <script>
+      function func() {
+        var a = document.getElementById("str").value;
+
+        if (a.substring(0, 2) == ("Py" || "py")) {
+          document.getElementById("result").innerHTML = a;
+        } else {
+          document.getElementById("result").innerHTML = "Py" + a;
+        }
+      }
+    </script>
+  </body>
+</html>
