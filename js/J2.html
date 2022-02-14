@@ -1,0 +1,26 @@
+<!-- 2. Write a JavaScript program to check from two given integers, if one is positive and one is
+negative. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Task 2</title>
+  </head>
+  <body>
+    <input type="text" id="number1" placeholder="Enter 1st digit" /><br /><br />
+    <input type="text" id="number2" placeholder="Enter 2nd digit" /><br /><br />
+    <button id="btn" onclick="func()">Submit</button>
+    <p id="result"></p>
+
+    <script>
+      function func() {
+        var a = document.getElementById("number1").value;
+        var b = document.getElementById("number2").value;
+
+        if ((a < 0 && b > 0) || (a > 0 && b < 0)) {
+          document.getElementById("result").innerHTML = "True";
+        }
+      }
+    </script>
+  </body>
+</html>

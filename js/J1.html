@@ -1,0 +1,33 @@
+<!-- 1. Write a JavaScript program to check two given numbers and return true if one of the number
+is 50 or if their sum is 50 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>task 1</title>
+  </head>
+  <body>
+    <input type="number" id="number1" placeholder="Enter 1st digit" />
+    <br /><br />
+    <input
+      type="number"
+      id="number2"
+      placeholder="Enter 2nd digit"
+    /><br /><br />
+    <button id="submit" onclick="func()">Submit</button>
+    <p id="result"></p>
+
+    <script>
+      function func(a, b) {
+        a = parseInt(document.getElementById("number1").value);
+        b = parseInt(document.getElementById("number2").value);
+
+        if (a == 50 || b == 50 || a + b == 50) {
+          document.getElementById("result").innerHTML = "True";
+        } else {
+          document.getElementById("result").innerHTML = "Invalid";
+        }
+      }
+    </script>
+  </body>
+</html>

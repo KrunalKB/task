@@ -1,0 +1,20 @@
+<!-- 9. Write a JavaScript conditional statement to find the largest of five numbers. Display an alert
+box to show the result.
+Sample numbers: -5, -2, -6, 0, -1
+Output: 0 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Task 9</title>
+  </head>
+  <body>
+    <p id="result"></p>
+    <script>
+      const ary = [2, 5, -1, 9, 13];
+      const x = Math.max.apply(null, ary);
+      document.getElementById("result").innerHTML =
+        x + "&nbsp" + "is larger from list";
+    </script>
+  </body>
+</html>
